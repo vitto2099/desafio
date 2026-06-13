@@ -5,10 +5,6 @@ from pathlib import Path
 PASTA_TESTS = Path(__file__).parent
 PASTA_RAIZ = PASTA_TESTS.parent
 
-subprocess.run(
-    [sys.executable, "-m", "pip", "install", "--upgrade", "-r", str(PASTA_RAIZ / "requirements.txt")],
-    check=True,
-)
 
 testes = [
     "test_listar_usuarios_retorna_status_200.py",
@@ -28,9 +24,14 @@ testes = [
 ]
 
 if __name__ == "__main__":
+    subprocess.run(
+        [sys.executable, "-m", "pip", "install", "--upgrade", "-r", str(PASTA_RAIZ / "requirements.txt")],
+        check=True,
+    )
     arquivos = [str(PASTA_TESTS / t) for t in testes]
     resultado = subprocess.run(
         [sys.executable, "-m", "pytest", "-v"] + arquivos,
         cwd=str(PASTA_RAIZ),
     )
     sys.exit(resultado.returncode)
+

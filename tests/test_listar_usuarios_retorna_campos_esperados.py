@@ -1,7 +1,7 @@
 import requests
 from jsonschema import validate
-from tests.conftest import BASE_URL
-from tests.schemas import SCHEMA_LISTAR_USUARIOS
+from conftest import BASE_URL
+from schemas import SCHEMA_LISTAR_USUARIOS
 
 
 def test_listar_usuarios_retorna_campos_esperados():

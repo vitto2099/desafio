@@ -1,8 +1,8 @@
 import pytest
 import requests
 from jsonschema import validate
-from tests.conftest import BASE_URL, cadastrar_produto, email_unico, cadastrar_usuario, fazer_login
-from tests.schemas import SCHEMA_LISTAR_PRODUTOS
+from conftest import BASE_URL, cadastrar_produto, email_unico, cadastrar_usuario, fazer_login
+from schemas import SCHEMA_LISTAR_PRODUTOS
 
 
 def test_listar_produtos_retorna_200():

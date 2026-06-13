@@ -1,6 +1,6 @@
 from jsonschema import validate
-from tests.conftest import email_unico, cadastrar_usuario, fazer_login
-from tests.schemas import SCHEMA_LOGIN_SUCESSO
+from conftest import email_unico, cadastrar_usuario, fazer_login
+from schemas import SCHEMA_LOGIN_SUCESSO
 
 
 def test_login_com_credenciais_corretas():

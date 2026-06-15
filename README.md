@@ -2,8 +2,7 @@
 
 > **Programa:** AI/R Fellowship (AIR Academy & Innovation Studio Quality Engineering com apoio da AWS)  
 > **Projeto:** Testes automatizados para a API pública [ServeRest](https://compassuol.serverest.dev/)
-> **CI Status:** ![CI Workflow](https://github.com/vitto2099/desafio-qa-serverest-VitorKunicki/actions/workflows/pytest.yml/badge.svg)
-
+> **CI Status:** ![![CI Workflow](https://github.com/vitto2099/DesafioAir-qa-serverest-VitorKunicki/actions/workflows/pytest.yml/badge.svg)](https://github.com/vitto2099/DesafioAir-qa-serverest-VitorKunicki/actions/workflows/pytest.yml)
 ---
 
 ## 🛠️ O que Fizemos (Ajustes e Correções Recentes)

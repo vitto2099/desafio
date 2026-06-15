@@ -81,7 +81,6 @@ def test_atualizar_produto_existente(token_admin):
     assert resposta_atualizacao.json()["message"] == "Registro alterado com sucesso"
 
 
-@pytest.mark.xfail(reason="Bug na ServeRest: retorna 'Nenhum registro excluído' mesmo para produto existente")
 def test_excluir_produto_existente(token_admin):
     resposta_cadastro = cadastrar_produto(token_admin)
     id_produto = resposta_cadastro.json()["_id"]

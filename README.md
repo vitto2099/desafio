@@ -67,8 +67,6 @@ Com base nos conceitos de mapeamento de endpoints da API REST, a cobertura foi c
 
 **Cenários que ficaram de fora e por quê:**
 *   **Rota `/carrinhos`:** Ficou de fora do escopo atual para focar em testes profundos e consolidação das entidades básicas e autenticação (Usuários e Produtos).
-*   **Testes de Performance/Carga:** O desafio atual exigia foco em testes de contrato e regras de negócio da API.
-
 ---
 
 ## 📂 Estrutura do Projeto

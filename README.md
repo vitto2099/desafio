@@ -55,6 +55,22 @@ Garantir a qualidade, estabilidade e corretude dos principais endpoints da API p
 
 ---
 
+## 📊 Análise de Cobertura da API
+
+**Método utilizado para calcular a cobertura:**  
+Com base nos conceitos de mapeamento de endpoints da API REST, a cobertura foi calculada comparando o número de rotas e métodos HTTP disponíveis na ServeRest em relação aos que possuem testes automatizados nesta suíte.
+
+*   **Rotas Mapeadas:** `/login` (1 método), `/usuarios` (4 métodos: GET, POST, PUT, DELETE), `/produtos` (4 métodos), `/carrinhos` (4 métodos). Total de **13 operações principais**.
+*   **Rotas Cobertas:** `/login` (1), `/usuarios` (4) e `/produtos` (4). Total de **9 operações testadas**.
+
+**Cobertura Total Atingida:** `~69%` (9 de 13 operações) ou **75%** dos módulos da API (3 de 4).
+
+**Cenários que ficaram de fora e por quê:**
+*   **Rota `/carrinhos`:** Ficou de fora do escopo atual para focar em testes profundos e consolidação das entidades básicas e autenticação (Usuários e Produtos).
+*   **Testes de Performance/Carga:** O desafio atual exigia foco em testes de contrato e regras de negócio da API.
+
+---
+
 ## 📂 Estrutura do Projeto
 
 ```
